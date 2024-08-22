@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>To-Do List Application</title>
+   <link rel="stylesheet"href="to.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>My To-Do List</h2>
+
+    <div class="clearfix">
+        <input type="text" id="myInput" placeholder="Title..."><br><br><br>
+        <button class="addBtn" onclick="addTask()">Add</button>
+    </div>
+
+    <ul id="myUL">
+        <!-- List of tasks will appear here -->
+    </ul>
+
+    <div class="filters">
+        <button onclick="filterTasks('all')">All</button>
+        <button onclick="filterTasks('completed')">Completed</button>
+        <button onclick="filterTasks('pending')">Pending</button>
+    </div>
+</div>
+<script src="to.js"></script>
+
+</body>
+</html>
